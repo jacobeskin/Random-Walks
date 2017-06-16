@@ -1,0 +1,13 @@
+# -*-makefile-*-
+
+ThreeDwalker.exe: mtfort90.o ThreeDwalker.o
+	gfortran -g -o ThreeDwalker.exe mtfort90.o ThreeDwalker.o
+
+mtfort90.o: mtfort90.f90
+	gfortran -g -c mtfort90.f90
+
+ThreeDwalker.o: ThreeDwalker.f90
+	gfortran -g -c ThreeDwalker.f90
+
+clean:
+	rm -f *.o

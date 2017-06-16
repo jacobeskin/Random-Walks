@@ -1,0 +1,7 @@
+Random walk in 3D
+
+Compilation: $ make -f make3Dwalker
+Running: $ ./ThreeDwalker.exe
+
+3 walkers with 1000 steps. Prints walks to files for printing. To be used as
+a base for solvind the diffusion constant if diffusion equation.

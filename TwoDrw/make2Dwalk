@@ -1,0 +1,13 @@
+# -*-makefile-*-
+
+twoDwalk.exe: mtfort90.o twoDwalk.o
+	gfortran -g -o twoDwalk.exe mtfort90.o twoDwalk.o
+
+mtfort90.o: mtfort90.f90
+	gfortran -g -c mtfort90.f90
+
+twoDwalk.o: twoDwalk.f90
+	gfortran -g -c twoDwalk.f90
+
+clean:
+	rm -f *.o
