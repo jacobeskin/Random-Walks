@@ -1,11 +1,9 @@
-Excercise 1 problem 2
+2D random walk on continous plane
 
-Compilation: make -f makeMCE1P2
-Running: ./Ex1P02.exe a b, where a and b are values for l_1 and l_2
+Compilation: make -f make2Dwalk
+Running: ./twoDwalk.exe
 
-Used 10000 walkers with 1000 steps. Did the run with l_1=1 and l_2=2, l_1=2 
-and l_2=3 and l_1=1 with l_2=4, and the results for <R²> where 2517.782, 
-6567.75 and 8484.511 respectively. Code prints out a text file of how <R²> 
-changes with N. Relation between <R²> and number of steps was linear, as can be seen from the two pictures. 
+a b, where a and b are values for l_1 and l_2
 
+3 walkers with 1000 steps.
 Walkers direction on every step is determined by an angle randomly generated.
